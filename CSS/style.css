@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+Body{
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: large;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 3px 23px;
+    margin: 10px;
+    display: block;
+    color: wheat;
+    border-radius: 12px;
+    font-family: 'Gwendolyn', cursive;
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(17, 180, 31, 0.575);
+}
+
+
+.logo img{
+    height: 100px;
+    margin: 10px;
+}
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3px 200px;
+    height: 300px;
+}
+
+.Home::before{
+    content: "";
+    background: url(../IMG/bg1.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.Home h1{
+    color: cyan;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Gwendolyn', cursive;
+    margin-top: 50px;
+}
+
+.Home p{
+    color: white;
+    font-family: 'Gwendolyn', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.primary{
+    font-size: 40px;
+    padding: 12px;
+}
+
+.btn{
+    margin-top: 10px ;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 2px solid #5a07078c;
+    color: white;
+    background-color: rgba(165, 42, 42, 0.75);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: brown;
+}
+
+.Services{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%);
+    height: 100%;
+}
+
+.Services h1{
+    text-align: center;
+    margin-top: 100px;
+    color: #e8ff00;
+}
+
+#service{
+    display: flex;
+}
+
+#service .box{
+    border: none;  
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0px 10px;
+    background-color: #e2eb1000;
+    margin-bottom: 20px;
+}
+
+#service .box img{
+    display: block;
+    height: 160px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#service .box img:hover{
+    transform: rotateY(360deg);
+    transition-duration: 1s;
+}
+
+.box h2{
+    text-align: center;
+    color: #ff00bc;
+}
+
+.box p{
+    text-align: center;
+    color: #fffefe;
+}
+
+.Outlets{
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Outlets h1{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(255, 0, 0);
+}
+.Outlets::before{
+    content: "";
+    position: absolute;
+    /* background: url('../img/bg2.jpg') no-repeat center center/cover ; */
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#outlet-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#outlet-logo img{
+    height: 110px;
+    margin: 20px 60px;
+}
+#outlet-logo img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+#contact{
+    position: relative;
+}
+#contact h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: greenyellow;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 103%;
+    z-index: -1;
+    opacity: 1;
+    background: url('../img/bookatable.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 5px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #f4e2049e;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+.Button{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(198, 247, 21);
+    box-shadow:0px 0px 15px rgb(255, 9, 9);
+    color: rgb(224, 45, 13);
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 25%;
+    transition: all 0.5s;
+}
+
+.Button-div{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Button:hover{
+    background-color: rgb(5, 252, 25);
+    box-shadow:0px 0px 15px rgb(235, 252, 2);
+    transform: scale(1.2);
+    transition-duration: 0.25s;
+}
+.center{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+}
+.box{
+    border: 2px solid black;
+    background-color: chocolate;
+    padding: 10px;
+}
+
+@media (max-width: 900px){
+    .navbar{
+        flex-direction: column;
+     }
+
+     #service{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     #service .box{
+        border: none;  
+        width: 500px;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 0px 10px;
+        background-color: #e2eb1000;
+        margin-bottom: 20px;
+     }
+     
+     .Outlets{
+        overflow: hidden;
+     }
+     
+     #contact{
+     
+     }
+     #contact .Button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+    #outlet-logo img {
+        height: 110px;
+        margin: 20px 5px;
+    }
+    
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+    #outlet-logo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #outlet-logo img {
+        height: 100px;
+        margin: 0px 5px;
+    }
+
+    .navbar ul li a{
+        margin: 0px;
+        font-size: 18px;
+    } 
+
+    .Home h1{
+        color: cyan;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Gwendolyn', cursive;
+        margin-top: 50px;
+    }
+
+    #service .box{
+        border: none;  
+        width: 300px;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 0px 10px;
+        background-color: #e2eb1000;
+        margin-bottom: 20px;
+     }
+}
+
+@media (min-width: 300px) and (max-width: 400px){
+    #outlet-logo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #outlet-logo img {
+        height: 100px;
+        margin: 0px 5px;
+    }
+
+    .navbar ul li a{
+        margin: 0px;
+        font-size: 11px;
+    } 
+
+    .Home h1{
+        color: cyan;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Gwendolyn', cursive;
+        margin-top: 50px;
+    }
+
+    #service .box{
+        border: none;  
+        width: 200px;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 0px 10px;
+        background-color: #e2eb1000;
+        margin-bottom: 20px;
+     }
+
+    #contact-box label{
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #f4e2049e;
+    }
+}
